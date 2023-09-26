@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade6</title>
+</head>
+<body>
+   
+<font size="9">
+O valor do prêmio é: 
+<span id="Valordopremio"></span><br> O funcionário vendeu: 
+<span id="Valordasvendas"></span> Reais <br>
+<span id="retorno"></span>
+
+
+</font>
+
+
+
+
+
+<script>
+
+let Valordasvendas = Number(prompt("Digite o valor vendido pelo funcionario"))
+let Valordopremio = "3000"
+let retorno = ''
+if(Valordasvendas >= Valordopremio){
+retorno = "O funcionário adquiriu o prêmio!!!"
+} else if (Valordasvendas < Valordopremio){
+retorno = "O funcionário não adquiriu o prêmio!!!"
+}
+
+document.getElementById("Valordopremio").innerHTML = Valordopremio
+document.getElementById("Valordasvendas").innerHTML = Valordasvendas
+document.getElementById("retorno").innerHTML = retorno
+</script>
+    </center>
+</body>
+</html>

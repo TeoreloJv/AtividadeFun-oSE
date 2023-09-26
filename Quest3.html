@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade3</title>
+</head>
+<body>
+   
+<font size="9">
+<span id="Pessoa1"> </span> Tem  
+<span id="Ano1"></span> Anos<br>
+<span id="Pessoa2"> </span> Tem 
+<span id="Ano2"></span> Anos<br><br>
+<span id="resultado"></span>
+
+</font>
+ㅤㅤ
+
+<script>
+
+let Pessoa1 = prompt("Digite o nome da Pessoa1");
+let Ano1 = Number(prompt("Digite o ano da Pessoa1"));
+let Pessoa2 = prompt("Digite o nome da Pessoa2");
+let Ano2 = Number(prompt("Digite o ano da pessoa2"));
+let resultado = "";
+
+if (Ano1 > Ano2){
+    resultado = Pessoa2 + " é mais velha(o) que " + Pessoa1;
+}else if (Ano1<Ano2){
+    resultado = Pessoa1 + " é mais velha(o) que " + Pessoa2;
+}else if (Ano1 == Ano2){
+    resultado = "Ambos possuem a mesma idade"
+}
+
+document.getElementById("Ano1").innerHTML = 2023 - Ano1;
+document.getElementById("Pessoa1").innerHTML = Pessoa1;
+document.getElementById("Ano2").innerHTML = 2023 - Ano2;
+document.getElementById("Pessoa2").innerHTML = Pessoa2;
+document.getElementById("resultado").innerHTML = resultado;
+</script>
+    </center>
+</body>
+</html>

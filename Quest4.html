@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade4</title>
+</head>
+<body>
+   <font size="9">
+<span id="Nume"></span><br>
+<span id="resultado"></span>
+
+
+
+<script>
+
+let Nume = Number(prompt("Digite um número para identificar se ele é par ou impar"));
+let resultado = '';
+
+if (Nume % 2 == 0){
+    resultado = "o número é par";
+}else if (Nume % 2 != 0){
+    resultado = "O número é ímpar";
+}
+
+document.getElementById("Nume").innerHTML = Nume ;
+document.getElementById("resultado").innerHTML = resultado;
+</script>
+    </center>
+</body>
+</html>

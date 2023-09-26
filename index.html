@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade1</title>
+</head>
+<body>
+    <font size="9"> <span id="Num1">  </span>
+    --- </font>
+    
+    <font size="9"> <span id="Num2"></span></font> <br>
+<font size="9"> <span id="resultado"></span></font>
+<br><br><br><br>
+
+<script>
+
+
+let Num1 = Number(prompt("Digite o número1"))
+let Num2 = Number(prompt("Digite o número2"))
+let resultado = ""
+
+if (Num1 > Num2){
+    resultado = "O número1 é maior" + "</br>" + "O número2 é menor";
+}else if (Num1 < Num2){
+    resultado = "O número2 é maior" + "</br>" + "O  número1 é menor";
+} if (Num1 == Num2){
+    resultado = "Nenhum número é maior que o outro"
+}
+
+document.getElementById("Num1").innerHTML= Num1;
+document.getElementById("Num2").innerHTML= Num2 + "</br>";
+document.getElementById("resultado").innerHTML= resultado;
+
+
+
+</script>
+   
+</body>
+</html>

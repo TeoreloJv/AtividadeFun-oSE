@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+</head>
+<bodyr>
+   
+<font size="9">
+<span id="Pessoa1"> </span> Tem  
+<span id="Peso1"></span><br>
+<span id="Pessoa2"> </span> Tem 
+<span id="Peso2"></span><br><br>
+<span id="resultado"></span>
+
+</font>
+ㅤㅤ
+
+<script>
+
+let Pessoa1 = prompt("Digite o nome da Pessoa1");
+let Peso1 = Number(prompt("Digite o peso da Pessoa1"));
+let Pessoa2 = prompt("Digite o nome da Pessoa2");
+let Peso2 = Number(prompt("Digite o peso da Pessoa2"));
+let resultado = "";
+
+if (Peso1 > Peso2){
+    resultado = Pessoa1 + " tem o peso superior a  " + Pessoa2;
+}else if (Peso1<Peso2){
+    resultado = Pessoa2 + " tem o peso superior a " + Pessoa1;
+}else if (Peso1 == Peso2){
+    resultado = "Ambos possuem o mesmo peso"
+}
+
+document.getElementById("Peso1").innerHTML = Peso1 + "Kg";
+document.getElementById("Pessoa1").innerHTML = Pessoa1;
+document.getElementById("Peso2").innerHTML = Peso2 + "Kg";
+document.getElementById("Pessoa2").innerHTML = Pessoa2;
+document.getElementById("resultado").innerHTML = resultado;
+</script>
+    </center>
+</body>
+</html>
